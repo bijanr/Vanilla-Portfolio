@@ -21,21 +21,47 @@
         padding: 8px 15px;
     }
 
-    .expertise-container {
-        flex-direction: column;
-        gap: 15px;
+    
+    .expertise-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .expertise-description{
+        font-size: 0.7rem;
+    }
+    
+    .expertise-title{
+        font-size: 1.2rem;
+    }
+
+    .expertise-icon{
+        width: 30px;
+        height: 30px;
     }
 
     .expertise-box {
-        width: 100%;
+        width: 80%;
         min-width: unset;
     }
 
-    .navbar {
-        gap: 8px;
-        right: 2%;
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
     }
 
+
+    .navbar {
+        position: fixed;
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+        padding: 20px 10px;
+        flex-direction: row;
+    }
     .btn img {
         width: 24px;
         height: 24px;
