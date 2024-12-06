@@ -22,11 +22,14 @@
     }
 
     
-    .expertise-container{
+    .expertise-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        overflow: hidden;
+        flex-direction: column; /* Stack containers vertically */
+        justify-content: center;
+        align-items: center; /* Center align the items */
+        gap: 20px; /* Add space between boxes */
+        padding: 10px; /* Prevent containers from touching edges */
+        overflow: hidden; /* Prevent overflow */
     }
 
     .expertise-description{
@@ -43,14 +46,34 @@
     }
 
     .expertise-box {
-        width: 80%;
-        min-width: unset;
+        width: 100%; /* Make the boxes take full width */
+        max-width: 90%; /* Add a margin around the boxes */
+        padding: 15px; /* Adjust inner spacing for smaller screens */
+        margin: 0 auto; /* Center the boxes horizontally */
     }
 
-    .about-container{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+    .about-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack the left and right sections */
+        gap: 15px; /* Add spacing between stacked items */
+    }
+
+    .about-left h2, .about-right h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .about-left p {
+        font-size: 0.9rem; /* Adjust text size for readability */
+        line-height: 1.4; /* Ensure enough space between lines */
+    }
+
+    .profile-card span {
+        font-size: 0.8rem; /* Reduce text size in profile cards */
+    }
+
+    .profile-card img {
+        width: 40px; /* Adjust icon size */
+        height: 40px;
     }
 
 
@@ -82,10 +105,28 @@
         padding: 10px 18px;
     }
 
-    .expertise-box {
-        flex: 1 1 48%;
-        max-width: 48%;
+    .about-container {
+        padding: 20px; /* Slightly more padding than mobile */
+        flex-direction: column; /* Stack sections */
+        gap: 20px;
     }
+
+    .about-left h2, .about-right h2 {
+        font-size: 2rem; /* Slightly larger headings */
+    }
+
+    .about-left p {
+        font-size: 1rem; /* Slightly larger text */
+        line-height: 1.5;
+    }
+
+    .profile-card span {
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+
+    
+
+
 }
 
 /* Larger Devices */
